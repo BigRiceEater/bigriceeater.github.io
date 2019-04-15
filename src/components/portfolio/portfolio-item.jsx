@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import icons from './../../modules/icon-mapper';
 import PortfolioItemFooter from './portfolio-item-footer';
+import PortfolioItemFrameworkList from './portfolio-item-framework-list';
 
 class PortfolioItem extends Component {
   render() {
@@ -10,9 +11,11 @@ class PortfolioItem extends Component {
         <div className='card' style={this.cardStyle}>
           <div className='card-header'>
             <p className='card-header-title'>{title}</p>
-            <a href={demoUrl} target='_blank' className='card-header-icon'>
-              demo &nbsp; <span> {icons.utility.externalLink} </span>
-            </a>
+            <div className='card-header-icon'>
+              <PortfolioItemFrameworkList
+                icons={[icons.brand.js, icons.brand.react]}
+              />
+            </div>
           </div>
 
           <div className='card-image'>
