@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Icons from './../../modules/icon-mapper';
 
 class MobileBurgerMenu extends Component {
   getMenuClasses = () => {
@@ -18,7 +19,7 @@ class MobileBurgerMenu extends Component {
             onClick={() => {
               this.props.onNavigation();
             }}>
-            Portfolio
+            {Icons.utility.code} &nbsp; Portfolio
           </Link>
         </div>
       </div>

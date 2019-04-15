@@ -5,7 +5,7 @@ import {
   faSearch,
   faExternalLinkAlt,
   faQuestionCircle,
-  faBreadSlice
+  faCode
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faGithub,
@@ -15,7 +15,7 @@ import {
   faNodeJs
 } from '@fortawesome/free-brands-svg-icons';
 
-const utilityIcons = [faExternalLinkAlt, faSearch, faQuestionCircle];
+const utilityIcons = [faExternalLinkAlt, faSearch, faQuestionCircle, faCode];
 const brandIcons = [faGithub, faReact, faVuejs, faJsSquare, faNodeJs];
 
 library.add(...utilityIcons, ...brandIcons);
@@ -26,7 +26,8 @@ export default {
   utility: {
     externalLink: <FontAwesomeIcon icon='external-link-alt' />,
     search: <FontAwesomeIcon icon='search' />,
-    unknown: <FontAwesomeIcon icon='question-circle' />
+    unknown: <FontAwesomeIcon icon='question-circle' />,
+    code: <FontAwesomeIcon icon='code' />
   },
   brand: {
     github: <FontAwesomeIcon icon={['fab', 'github']} />,
