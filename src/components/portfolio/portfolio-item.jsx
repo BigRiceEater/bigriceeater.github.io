@@ -36,12 +36,14 @@ class PortfolioItem extends Component {
               <img
                 src={thumbnail}
                 alt='card image'
-                style={{ objectFit: 'cover' }}
+                style={{ objectFit: 'cover', marginTop: '5px' }}
               />
             </figure>
           </div>
 
-          <div className='card-content'>
+          <div
+            className='card-content'
+            style={{ height: '120px', overflowY: 'auto' }}>
             <p>{description}</p>
           </div>
 
