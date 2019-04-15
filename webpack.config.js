@@ -32,7 +32,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Gary Hung',
+      title: 'Big Rice',
       template: 'src/index.html'
     })
   ],
