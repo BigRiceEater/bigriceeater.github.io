@@ -24,8 +24,8 @@ export default class PortfolioMapper {
         title: 'Card System',
         thumbnail: cardSystemDemo,
         description: 'A horizontal scrollable list of cards.',
-        sourceCodeUrl: 'https://git.io/fjmH5',
-        demoUrl: 'https://git.io/fjmSX',
+        sourceCodeUrl: 'https://git.io/fjmdB',
+        demoUrl: 'https://git.io/fjmdl',
         projectTags: [tag.VUE, tag.JS]
       })
     ];
