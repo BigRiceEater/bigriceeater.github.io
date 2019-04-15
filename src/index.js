@@ -3,6 +3,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import './App.css';
-import 'bulma/css/bulma.min.css';
+import './theme.scss';
 
 ReactDOM.render(<App />, document.getElementById('root'));

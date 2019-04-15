@@ -8,7 +8,10 @@ module.exports = {
     filename: 'bundle.js'
   },
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx'],
+    alias: {
+      '@': path.resolve('src')
+    }
   },
   module: {
     rules: [
@@ -18,8 +21,12 @@ module.exports = {
         use: 'babel-loader'
       },
       {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader']
+        test: /\.s?css$/,
+        use: ['style-loader', 'css-loader', 'sass-loader']
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: ['file-loader']
       }
     ]
   },
@@ -31,6 +38,7 @@ module.exports = {
   ],
   devServer: {
     publicPath: '/',
+    historyApiFallback: true,
     contentBase: path.join(__dirname, '/dist/'),
     port: 3000
   }
