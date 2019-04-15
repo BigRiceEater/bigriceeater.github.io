@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import icons from './../../modules/icon-mapper';
 import PortfolioItemFooter from './portfolio-item-footer';
 import PortfolioItemFrameworkList from './portfolio-item-framework-list';
+import ProjectThumbnail from './project-thumbnail';
 
 class PortfolioItem extends Component {
   projectIcons = (tags) => {
@@ -13,7 +14,7 @@ class PortfolioItem extends Component {
     const {
       id,
       title,
-      thumbnail,
+      thumbnails,
       description,
       demoUrl,
       sourceCodeUrl,
@@ -32,13 +33,14 @@ class PortfolioItem extends Component {
           </div>
 
           <div className='card-image'>
-            <figure className='image'>
+            <ProjectThumbnail thumbnails={thumbnails} />
+            {/* <figure className='image'>
               <img
                 src={thumbnail}
                 alt='card image'
                 style={{ objectFit: 'cover', marginTop: '5px' }}
               />
-            </figure>
+            </figure> */}
           </div>
 
           <div

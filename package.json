@@ -36,6 +36,7 @@
     "bulma": "^0.7.4",
     "i": "^0.3.6",
     "npm": "^6.9.0",
+    "nuka-carousel": "^4.5.3",
     "react-router-dom": "^5.0.0"
   }
 }

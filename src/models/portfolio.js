@@ -2,7 +2,7 @@ export default class Portfolio {
   constructor({
     id,
     title,
-    thumbnail,
+    thumbnails,
     description,
     sourceCodeUrl,
     demoUrl,
@@ -10,7 +10,7 @@ export default class Portfolio {
   }) {
     this.id = id;
     this.title = title;
-    this.thumbnail = thumbnail;
+    this.thumbnails = thumbnails;
     this.description = description;
     this.sourceCodeUrl = sourceCodeUrl;
     this.demoUrl = demoUrl;

@@ -12,7 +12,7 @@ export default class PortfolioMapper {
       new Portfolio({
         id: '3efc05a1-7c2f-4c49-9533-67cd6773bb80',
         title: 'Search Restaurant',
-        thumbnail: searchRestaurantDemo,
+        thumbnails: [searchRestaurant, searchRestaurantDemo],
         description:
           'Search by tags and name of fictional shops to show a list of results.',
         sourceCodeUrl: 'https://git.io/fjmH5',
@@ -22,7 +22,7 @@ export default class PortfolioMapper {
       new Portfolio({
         id: '94cbacfb-5dcf-47a0-bcd9-22d63a8f3ee0',
         title: 'Card System',
-        thumbnail: cardSystemDemo,
+        thumbnails: [cardSystemDemo],
         description: 'A horizontal scrollable list of cards.',
         sourceCodeUrl: 'https://git.io/fjmH5',
         demoUrl: 'https://git.io/fjmSX',
