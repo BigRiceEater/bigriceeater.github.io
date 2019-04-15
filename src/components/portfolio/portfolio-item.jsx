@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import icons from './../../modules/icon-mapper';
 
 class PortfolioItem extends Component {
   render() {
@@ -8,8 +9,8 @@ class PortfolioItem extends Component {
         <div className='card' style={this.cardStyle}>
           <div className='card-header'>
             <p className='card-header-title'>{title}</p>
-            <a href={demoUrl} target='_blank' class='card-header-icon'>
-              demo
+            <a href={demoUrl} target='_blank' className='card-header-icon'>
+              demo &nbsp; <span> {icons.utility.externalLink} </span>
             </a>
           </div>
 
