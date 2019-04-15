@@ -7,6 +7,6 @@ git checkout master
 git merge dev
 npm run build
 git add ./dist
-git commit -m "$DATE"
+git commit -m "Release $DATE"
 git subtree push --prefix dist origin master
 git checkout dev
