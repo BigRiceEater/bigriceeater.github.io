@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import icons from './../../modules/icon-mapper';
+import PortfolioItemFooter from './portfolio-item-footer';
 
 class PortfolioItem extends Component {
   render() {
@@ -27,7 +28,10 @@ class PortfolioItem extends Component {
           <div className='card-content'>
             <p>{description}</p>
           </div>
-          <div className='card-footer' />
+
+          <PortfolioItemFooter
+            tags={[icons.brand.react, icons.brand.js, icons.brand.node]}
+          />
         </div>
       </div>
     );
