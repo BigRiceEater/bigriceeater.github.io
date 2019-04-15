@@ -4,8 +4,21 @@ import PortfolioItemFooter from './portfolio-item-footer';
 import PortfolioItemFrameworkList from './portfolio-item-framework-list';
 
 class PortfolioItem extends Component {
+  projectIcons = (tags) => {
+    if (tags) return tags.map((t) => icons.getProjectIconByTag(t));
+    else return [];
+  };
+
   render() {
-    const { id, title, thumbnail, description, demoUrl } = this.props.data;
+    const {
+      id,
+      title,
+      thumbnail,
+      description,
+      demoUrl,
+      sourceCodeUrl,
+      projectTags
+    } = this.props.data;
     return (
       <div className='column is-half'>
         <div className='card' style={this.cardStyle}>
@@ -13,7 +26,7 @@ class PortfolioItem extends Component {
             <p className='card-header-title'>{title}</p>
             <div className='card-header-icon'>
               <PortfolioItemFrameworkList
-                icons={[icons.brand.js, icons.brand.react]}
+                icons={this.projectIcons(projectTags)}
               />
             </div>
           </div>
@@ -33,7 +46,8 @@ class PortfolioItem extends Component {
           </div>
 
           <PortfolioItemFooter
-            tags={[icons.brand.react, icons.brand.js, icons.brand.node]}
+            sourceCodeUrl={sourceCodeUrl}
+            demoUrl={demoUrl}
           />
         </div>
       </div>

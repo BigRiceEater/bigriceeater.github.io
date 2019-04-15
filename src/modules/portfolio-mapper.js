@@ -11,10 +11,10 @@ export default class PortfolioMapper {
         title: 'Search Restaurant',
         thumbnail: searchRestaurantThumbnail,
         description:
-          'Search by tags and name of fictional shops to show a list of results',
-        sourceCodeUrl: 'https://github.com/BigRiceEater/search-restaurant',
-        demoUrl: 'https://BigRiceEater.github.io/search-restaurant',
-        tags: [tag.VUE]
+          'Search by tags and name of fictional shops to show a list of results.',
+        sourceCodeUrl: 'https://git.io/fjmH5',
+        demoUrl: 'https://git.io/fjmSX',
+        projectTags: [tag.VUE, tag.JS]
       })
     ];
   }
