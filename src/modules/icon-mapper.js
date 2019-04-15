@@ -38,7 +38,6 @@ export default {
   },
   getProjectIconByTag(tag) {
     console.log('finding ', tag);
-    console.log(tag.VUE);
     const { vue, react, js, node } = this.brand;
     switch (tag) {
       case projectTags.VUE:
