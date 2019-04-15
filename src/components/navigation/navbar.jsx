@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import MobileBurgerMenu from './mobile-burger-menu';
+import avatar from './../../../assets/images/ricebowl-blue.jpg';
 
 class NavBar extends Component {
   state = {
@@ -23,7 +24,7 @@ class NavBar extends Component {
       <nav className='navbar is-primary' role='navigation'>
         <div className='navbar-brand'>
           <Link to={'/'} className='navbar-item' onClick={this.closeMenu}>
-            Big Rice
+            <img src={avatar} style={{ borderRadius: '50%' }} /> &nbsp; Big Rice
           </Link>
           <a
             role='button'
