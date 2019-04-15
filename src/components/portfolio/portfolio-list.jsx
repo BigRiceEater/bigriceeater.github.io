@@ -5,9 +5,9 @@ class PortfolioList extends Component {
   render() {
     const { portfolios } = this.props;
     return (
-      <div className='columns is-centered'>
+      <div className='columns is-variable is-0-mobile is-centered'>
         <div className='column is-three-quarters'>
-          <div className='columns is-multiline'>
+          <div className='columns is-variable is-0-mobile is-multiline'>
             {portfolios.map((p, idx) => (
               <PortfolioItem key={idx} data={p} />
             ))}

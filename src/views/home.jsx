@@ -4,7 +4,7 @@ class Home extends Component {
   state = {};
   render() {
     return (
-      <div className='columns is-centered'>
+      <div className='columns  is-variable is-0-mobile is-centered'>
         <div
           className='column is-half'
           style={{ background: 'lightcoral', marginTop: '60px' }}>
