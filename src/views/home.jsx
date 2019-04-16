@@ -1,17 +1,10 @@
 import React, { Component } from 'react';
+import FullStackDeveloper from './../components/home/fullstack-developer';
 
 class Home extends Component {
   state = {};
   render() {
-    return (
-      <div className='columns  is-variable is-0-mobile is-centered'>
-        <div
-          className='column is-half'
-          style={{ background: 'lightcoral', marginTop: '60px' }}>
-          <h1 className='title has-text-centered'>Home</h1>
-        </div>
-      </div>
-    );
+    return <FullStackDeveloper />;
   }
 }
 
