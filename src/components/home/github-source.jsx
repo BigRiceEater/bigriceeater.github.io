@@ -11,7 +11,7 @@ class GithubSource extends Component {
             <span className='fa-8x'>{Icons.brand.githubSquare}</span>
             <h1 className='title'>
               Github{' '}
-              <a href='#'>
+              <a href='https://github.com/BigRiceEater' target='_blank'>
                 <span className='fa-sm'>{Icons.utility.externalLink}</span>
               </a>
             </h1>
