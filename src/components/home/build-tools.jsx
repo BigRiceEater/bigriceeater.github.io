@@ -4,7 +4,7 @@ import Icons from './../../modules/icon/icon-mapper';
 
 class BuildTools extends Component {
   render() {
-    const { js, react, vue, webpack, node } = Icons.brand;
+    const { js, react, vue, webpack, node, sass } = Icons.brand;
     const icons = [
       {
         icon: js,
@@ -25,7 +25,8 @@ class BuildTools extends Component {
       {
         icon: node,
         label: 'NodeJs'
-      }
+      },
+      { icon: sass, label: 'SCSS' }
     ];
 
     return (

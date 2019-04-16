@@ -2,6 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import webpackIcon from './webpack-icon.jsx';
+import sassIcon from './sass-icon.jsx';
 
 import './fontawesome-library';
 import * as projectTags from '../../models/project-tags';
@@ -20,7 +21,8 @@ export default {
     vue: <FontAwesomeIcon color='#42b883' icon={['fab', 'vuejs']} />,
     js: <FontAwesomeIcon color='#f7df1e' icon={['fab', 'js-square']} />,
     node: <FontAwesomeIcon color='#6cc24a' icon={['fab', 'node-js']} />,
-    webpack: webpackIcon
+    webpack: webpackIcon,
+    sass: sassIcon
   },
   getProjectIconByTag(tag) {
     console.log('finding ', tag);
