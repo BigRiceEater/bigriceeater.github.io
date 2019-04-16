@@ -5,15 +5,7 @@ import PortfolioMapper from '@/modules/portfolio-mapper';
 
 class Portfolio extends Component {
   state = {
-    portfolios: [
-      ...new PortfolioMapper().get(),
-      ...new Array(4).fill({
-        title: 'Amazing Project',
-        thumbnail:
-          'https://dumielauxepices.net/sites/default/files/death-clipart-potion-499435-5062378.jpg',
-        description: 'My project is so awesome you must go and check it out!'
-      })
-    ]
+    portfolios: [...new PortfolioMapper().get()]
   };
   render() {
     const { portfolios } = this.state;
