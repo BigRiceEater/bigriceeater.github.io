@@ -36,7 +36,11 @@ class PortfolioItem extends Component {
               <img
                 src={thumbnail}
                 alt='card image'
-                style={{ objectFit: 'cover', marginTop: '5px' }}
+                style={{
+                  objectFit: 'cover',
+                  marginTop: '5px',
+                  minHeight: '180px'
+                }}
               />
             </figure>
           </div>
