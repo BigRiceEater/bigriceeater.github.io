@@ -10,7 +10,12 @@ class Portfolio extends Component {
   render() {
     const { portfolios } = this.state;
     return (
-      <AppPage>
+      <AppPage centered>
+        <h1 className='title'>Portfolio</h1>
+        <p>
+          This is a collection of my personal projects ranging from Mobile Apps
+          to Single-Page Applications
+        </p>
         <PortfolioList portfolios={portfolios} />
       </AppPage>
     );
