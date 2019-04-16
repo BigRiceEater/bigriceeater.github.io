@@ -21,6 +21,8 @@ export default {
     vue: <FontAwesomeIcon color='#42b883' icon={['fab', 'vuejs']} />,
     js: <FontAwesomeIcon color='#f7df1e' icon={['fab', 'js-square']} />,
     node: <FontAwesomeIcon color='#6cc24a' icon={['fab', 'node-js']} />,
+    apple: <FontAwesomeIcon icon={['fab', 'apple']} />,
+    windows: <FontAwesomeIcon icon={['fab', 'windows']} />,
     webpack: webpackIcon,
     sass: sassIcon
   },

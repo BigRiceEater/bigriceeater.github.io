@@ -11,7 +11,9 @@ import {
   faReact,
   faVuejs,
   faJsSquare,
-  faNodeJs
+  faNodeJs,
+  faApple,
+  faWindows
 } from '@fortawesome/free-brands-svg-icons';
 
 const utilityIcons = [faExternalLinkAlt, faSearch, faQuestionCircle, faCode];
@@ -21,7 +23,9 @@ const brandIcons = [
   faReact,
   faVuejs,
   faJsSquare,
-  faNodeJs
+  faNodeJs,
+  faApple,
+  faWindows
 ];
 
 library.add(...utilityIcons, ...brandIcons);
