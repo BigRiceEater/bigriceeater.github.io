@@ -7,6 +7,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faGithub,
+  faGithubSquare,
   faReact,
   faVuejs,
   faJsSquare,
@@ -14,6 +15,13 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 const utilityIcons = [faExternalLinkAlt, faSearch, faQuestionCircle, faCode];
-const brandIcons = [faGithub, faReact, faVuejs, faJsSquare, faNodeJs];
+const brandIcons = [
+  faGithub,
+  faGithubSquare,
+  faReact,
+  faVuejs,
+  faJsSquare,
+  faNodeJs
+];
 
 library.add(...utilityIcons, ...brandIcons);

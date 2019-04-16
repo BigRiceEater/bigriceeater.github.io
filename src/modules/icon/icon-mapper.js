@@ -15,6 +15,7 @@ export default {
   },
   brand: {
     github: <FontAwesomeIcon icon={['fab', 'github']} />,
+    githubSquare: <FontAwesomeIcon icon={['fab', 'github-square']} />,
     react: <FontAwesomeIcon color='#00d8ff' icon={['fab', 'react']} />,
     vue: <FontAwesomeIcon color='#42b883' icon={['fab', 'vuejs']} />,
     js: <FontAwesomeIcon color='#f7df1e' icon={['fab', 'js-square']} />,
