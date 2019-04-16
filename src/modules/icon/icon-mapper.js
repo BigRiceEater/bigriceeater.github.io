@@ -19,7 +19,7 @@ export default {
     react: <FontAwesomeIcon color='#00d8ff' icon={['fab', 'react']} />,
     vue: <FontAwesomeIcon color='#42b883' icon={['fab', 'vuejs']} />,
     js: <FontAwesomeIcon color='#f7df1e' icon={['fab', 'js-square']} />,
-    node: <FontAwesomeIcon icon={['fab', 'node-js']} />,
+    node: <FontAwesomeIcon color='#6cc24a' icon={['fab', 'node-js']} />,
     webpack: webpackIcon
   },
   getProjectIconByTag(tag) {
