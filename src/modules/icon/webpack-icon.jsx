@@ -7,6 +7,6 @@ export default (
     src={webpackSquare}
     width={size}
     height={size}
-    style={{ marginTop: '30px', padding: 0 }}
+    style={{ marginTop: '00px', padding: 0 }}
   />
 );
