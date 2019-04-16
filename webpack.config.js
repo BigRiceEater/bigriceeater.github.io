@@ -25,7 +25,7 @@ module.exports = {
         use: ['style-loader', 'css-loader', 'sass-loader']
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
+        test: /\.(png|svg|jpg|gif|ico)$/,
         use: ['file-loader']
       }
     ]
@@ -33,7 +33,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Big Rice',
-      template: 'src/index.html'
+      template: 'src/index.html',
+      favicon: 'assets/favicon.ico'
     })
   ],
   devServer: {
