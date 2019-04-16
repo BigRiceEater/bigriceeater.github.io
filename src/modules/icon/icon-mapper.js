@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import webpackIcon from './webpack-icon.jsx';
 import sassIcon from './sass-icon.jsx';
+import bulmaIcon from './bulma-icon.jsx';
 
 import './fontawesome-library';
 import * as projectTags from '../../models/project-tags';
@@ -24,7 +25,8 @@ export default {
     apple: <FontAwesomeIcon icon={['fab', 'apple']} />,
     windows: <FontAwesomeIcon icon={['fab', 'windows']} />,
     webpack: webpackIcon,
-    sass: sassIcon
+    sass: sassIcon,
+    bulma: bulmaIcon
   },
   getProjectIconByTag(tag) {
     console.log('finding ', tag);

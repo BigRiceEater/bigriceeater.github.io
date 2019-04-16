@@ -4,29 +4,15 @@ import Icons from './../../modules/icon/icon-mapper';
 
 class BuildTools extends Component {
   render() {
-    const { js, react, vue, webpack, node, sass } = Icons.brand;
+    const { js, react, vue, webpack, node, sass, bulma } = Icons.brand;
     const icons = [
-      {
-        icon: js,
-        label: 'ES6'
-      },
-      {
-        icon: react,
-        label: 'React'
-      },
-      {
-        icon: vue,
-        label: 'Vue.js'
-      },
-      {
-        icon: webpack,
-        label: 'webpack'
-      },
-      {
-        icon: node,
-        label: 'NodeJs'
-      },
-      { icon: sass, label: 'SCSS' }
+      { icon: js, label: 'ES6' },
+      { icon: react, label: 'React' },
+      { icon: vue, label: 'Vue.js' },
+      { icon: webpack, label: 'webpack' },
+      { icon: node, label: 'NodeJs' },
+      { icon: sass, label: 'SCSS' },
+      { icon: bulma, label: 'Bulma CSS' }
     ];
 
     return (
