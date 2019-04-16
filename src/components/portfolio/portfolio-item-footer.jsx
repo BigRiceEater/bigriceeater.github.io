@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import icons from './../../modules/icon-mapper';
+import icons from '../../modules/icon/icon-mapper';
 
 class PortfolioItemFooter extends Component {
   render() {

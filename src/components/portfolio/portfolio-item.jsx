@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import icons from './../../modules/icon-mapper';
+import icons from '../../modules/icon/icon-mapper';
 import PortfolioItemFooter from './portfolio-item-footer';
 import PortfolioItemFrameworkList from './portfolio-item-framework-list';
 

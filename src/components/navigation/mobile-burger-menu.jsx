@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Icons from './../../modules/icon-mapper';
+import Icons from './../../modules/icon/icon-mapper';
 
 class MobileBurgerMenu extends Component {
   getMenuClasses = () => {

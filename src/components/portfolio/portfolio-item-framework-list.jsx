@@ -5,7 +5,7 @@ const PortfolioItemFrameworkList = (props) => {
   return (
     <React.Fragment>
       {icons.map((jsx, idx) => (
-        <span className='fa-lg' key={idx}>
+        <span className='fa-2x' key={idx}>
           {jsx} &nbsp;{' '}
         </span>
       ))}
