@@ -1,19 +1,28 @@
 import React, { Component } from 'react';
 import icons from '../../modules/icon/icon-mapper';
 
+const FooterItem = (props) => {
+  const { children, url } = props;
+  return (
+    <a href={url} target='_blank' className='card-footer-item'>
+      {children}
+    </a>
+  );
+};
+
 class PortfolioItemFooter extends Component {
   render() {
     const { sourceCodeUrl, demoUrl } = this.props;
     return (
       <footer className='card-footer'>
-        <a href={sourceCodeUrl} className='card-footer-item'>
+        <FooterItem url={sourceCodeUrl}>
           view code &nbsp;
           {icons.brand.github}
-        </a>
-        <a href={demoUrl} className='card-footer-item'>
+        </FooterItem>
+        <FooterItem url={demoUrl}>
           demo &nbsp;
           {icons.utility.externalLink}
-        </a>
+        </FooterItem>
       </footer>
     );
   }
