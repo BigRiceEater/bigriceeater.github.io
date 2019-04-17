@@ -6,8 +6,4 @@ import './App.css';
 import './theme.scss';
 import '#assets/favicon.ico';
 
-// For og:image
-
-import '#assets/images/portfolio.png';
-
 ReactDOM.render(<App />, document.getElementById('root'));
