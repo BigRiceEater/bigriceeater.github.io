@@ -7,7 +7,7 @@ class MobileBurgerMenu extends Component {
     links: [
       {
         to: '/',
-        icon: Icons.utility.unknown,
+        icon: Icons.utility.home,
         label: 'Home'
       },
       {

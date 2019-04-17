@@ -7,7 +7,9 @@ export default {
     externalLink: <FontAwesomeIcon icon='external-link-alt' />,
     search: <FontAwesomeIcon icon='search' />,
     unknown: <FontAwesomeIcon icon='question-circle' />,
-    code: <FontAwesomeIcon icon='code' />
+    code: <FontAwesomeIcon icon='code' />,
+    userCircle: <FontAwesomeIcon icon='user-circle' />,
+    home: <FontAwesomeIcon icon='home' />
   },
   brand: {
     github: <FontAwesomeIcon icon={['fab', 'github']} />,

@@ -3,7 +3,8 @@ import {
   faExternalLinkAlt,
   faQuestionCircle,
   faCode,
-  faUserCircle
+  faUserCircle,
+  faHome
 } from '@fortawesome/free-solid-svg-icons';
 
 export default [
@@ -11,5 +12,6 @@ export default [
   faSearch,
   faQuestionCircle,
   faCode,
-  faUserCircle
+  faUserCircle,
+  faHome
 ];
