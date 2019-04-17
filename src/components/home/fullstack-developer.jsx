@@ -8,8 +8,10 @@ class FullStackDeveloper extends Component {
       <section className='hero is-medium is-primary is-bold'>
         <div className='hero-body'>
           <div className='container has-text-centered'>
-            <h1 className='title'>Full-Stack Javascript {Icons.brand.js}</h1>
-            <h2 className='subtitle'>One language to rule them all</h2>
+            <div style={{ padding: '80px 0px' }}>
+              <h1 className='title'>Full-Stack Javascript {Icons.brand.js}</h1>
+              <h2 className='subtitle'>One language to rule them all</h2>
+            </div>
           </div>
         </div>
       </section>
