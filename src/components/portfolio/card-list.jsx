@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ListContainer from './list-container';
 import CardItem from './card-item';
 
-class PortfolioList extends Component {
+class CardList extends Component {
   render() {
     const { portfolios } = this.props;
     return (
@@ -17,4 +17,4 @@ class PortfolioList extends Component {
   }
 }
 
-export default PortfolioList;
+export default CardList;
