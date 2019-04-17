@@ -11,7 +11,6 @@ export default {
     ...svgIcons.brand
   },
   getProjectIconByTag(tag) {
-    console.log('finding ', tag);
     const { vue, react, js, node } = this.brand;
     switch (tag) {
       case projectTags.VUE:
