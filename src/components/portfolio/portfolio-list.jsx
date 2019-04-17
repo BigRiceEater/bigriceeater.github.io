@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PortfolioItem from './portfolio-item';
+import CardItem from './card-item';
 
 class PortfolioList extends Component {
   render() {
@@ -9,7 +9,7 @@ class PortfolioList extends Component {
         <div className='column is-three-quarters'>
           <div className='columns is-variable is-0-mobile is-multiline'>
             {portfolios.map((p, idx) => (
-              <PortfolioItem key={idx} data={p} />
+              <CardItem key={idx} data={p} />
             ))}
           </div>
         </div>

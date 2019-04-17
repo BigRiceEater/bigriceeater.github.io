@@ -1,36 +1,15 @@
 import React, { Component } from 'react';
-import icons from '../../modules/icon/icon-mapper';
+
 import PortfolioItemFooter from './portfolio-item-footer';
-import PortfolioItemFrameworkList from './portfolio-item-framework-list';
+import CardHeader from './card-header';
 
-class PortfolioItem extends Component {
-  projectIcons = (tags) => {
-    if (tags) return tags.map((t) => icons.getProjectIconByTag(t));
-    else return [];
-  };
-
+class CardItem extends Component {
   render() {
-    const {
-      id,
-      title,
-      thumbnail,
-      description,
-      demoUrl,
-      sourceCodeUrl,
-      projectTags
-    } = this.props.data;
+    const { thumbnail, description, demoUrl, sourceCodeUrl } = this.props.data;
     return (
       <div className='column is-half'>
         <div className='card' style={this.cardStyle}>
-          <div className='card-header'>
-            <p className='card-header-title'>{title}</p>
-            <div className='card-header-icon'>
-              <PortfolioItemFrameworkList
-                icons={this.projectIcons(projectTags)}
-              />
-            </div>
-          </div>
-
+          <CardHeader data={this.props.data} />
           <div className='card-image'>
             <figure className='image'>
               <img
@@ -66,4 +45,4 @@ class PortfolioItem extends Component {
   };
 }
 
-export default PortfolioItem;
+export default CardItem;
