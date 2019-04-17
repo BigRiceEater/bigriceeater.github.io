@@ -15,6 +15,10 @@ class AppPage extends Component {
       </section>
     );
   }
+
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
 }
 
 export default AppPage;
