@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PortfolioList from './../components/portfolio/portfolio-list';
+import CardList from '../components/portfolio/card-list';
 import AppPage from './../components/layout/app-page';
 import PortfolioMapper from '@/modules/portfolio-mapper';
 
@@ -16,7 +16,7 @@ class Portfolio extends Component {
           This is a collection of my personal projects ranging from Mobile Apps
           to Single-Page Applications
         </p>
-        <PortfolioList portfolios={portfolios} />
+        <CardList portfolios={portfolios} />
       </AppPage>
     );
   }

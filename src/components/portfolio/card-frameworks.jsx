@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-const PortfolioItemFrameworkList = (props) => {
+const CardFrameworks = (props) => {
   const { icons } = props;
   return (
     <React.Fragment>
@@ -13,4 +13,4 @@ const PortfolioItemFrameworkList = (props) => {
   );
 };
 
-export default PortfolioItemFrameworkList;
+export default CardFrameworks;
