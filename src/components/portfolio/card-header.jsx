@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PortfolioItemFrameworkList from './portfolio-item-framework-list';
+import CardFrameworks from './card-frameworks';
 import icons from '../../modules/icon/icon-mapper';
 
 class CardHeader extends Component {
@@ -14,7 +14,7 @@ class CardHeader extends Component {
       <div className='card-header'>
         <p className='card-header-title'>{title}</p>
         <div className='card-header-icon'>
-          <PortfolioItemFrameworkList icons={this.projectIcons(projectTags)} />
+          <CardFrameworks icons={this.projectIcons(projectTags)} />
         </div>
       </div>
     );
