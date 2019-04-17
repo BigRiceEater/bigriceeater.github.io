@@ -1,5 +1,5 @@
 import React from 'react';
-import bulmaIcon from './../../../assets/icons/bulma-square.svg';
+import bulmaIcon from '#assets/icons/bulma-square.svg';
 
 const size = '85px';
 export default (
@@ -7,6 +7,6 @@ export default (
     src={bulmaIcon}
     width={size}
     height={size}
-    style={{ marginTop: '00px', padding: 0 }}
+    style={{ marginTop: '0px', padding: 0 }}
   />
 );

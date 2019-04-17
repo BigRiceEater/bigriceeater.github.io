@@ -1,5 +1,5 @@
 import React from 'react';
-import webpackSquare from './../../../assets/icons/webpack-square.svg';
+import webpackSquare from '#assets/icons/webpack-square.svg';
 
 const size = '85px';
 export default (
@@ -7,6 +7,6 @@ export default (
     src={webpackSquare}
     width={size}
     height={size}
-    style={{ marginTop: '00px', padding: 0 }}
+    style={{ marginTop: '0px', padding: 0 }}
   />
 );
