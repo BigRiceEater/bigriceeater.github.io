@@ -2,22 +2,18 @@ import React, { Component } from 'react';
 import PortfolioItemFooter from './portfolio-item-footer';
 import CardHeader from './card-header';
 import CardThumbnail from './card-thumbnail';
+import CardBody from './card-body';
 
 class CardItem extends Component {
   render() {
-    const { thumbnail, description, demoUrl, sourceCodeUrl } = this.props.data;
+    const { demoUrl, sourceCodeUrl } = this.props.data;
     const { data } = this.props;
     return (
       <div className='column is-half'>
         <div className='card' style={this.cardStyle}>
           <CardHeader data={data} />
           <CardThumbnail data={data} />
-
-          <div
-            className='card-content'
-            style={{ height: '120px', overflowY: 'auto' }}>
-            <p>{description}</p>
-          </div>
+          <CardBody data={data} />
 
           <PortfolioItemFooter
             sourceCodeUrl={sourceCodeUrl}
