@@ -1,11 +1,9 @@
 import Portfolio from '@/models/portfolio';
 import * as tag from '@/models/project-tags';
 
-import searchRestaurant from './../../assets/images/search-restaurant.png';
-
-import searchRestaurantDemo from './../../assets/animated/search-restaurant-demo.gif';
-import cardSystemDemo from './../../assets/animated/card-system-demo.gif';
-import portfolioDemo from './../../assets/animated/portfolio-demo.gif';
+import searchRestaurantDemo from '#assets/animated/search-restaurant-demo.gif';
+import cardSystemDemo from '#assets/animated/card-system-demo.gif';
+import portfolioDemo from '#assets/animated/portfolio-demo.gif';
 
 export default class PortfolioMapper {
   constructor() {
