@@ -5,7 +5,7 @@ class GithubSource extends Component {
   state = {};
   render() {
     return (
-      <section className='hero has-background-light is-bold'>
+      <section className='hero is-medium has-background-light is-bold'>
         <div className='hero-body'>
           <div className='container has-text-centered'>
             <span className='fa-8x'>{Icons.brand.githubSquare}</span>
