@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import PortfolioItemFooter from './portfolio-item-footer';
+import CardFooter from './card-footer';
 import CardHeader from './card-header';
 import CardThumbnail from './card-thumbnail';
 import CardBody from './card-body';
 
 class CardItem extends Component {
   render() {
-    const { demoUrl, sourceCodeUrl } = this.props.data;
     const { data } = this.props;
     return (
       <div className='column is-half'>
@@ -14,19 +13,14 @@ class CardItem extends Component {
           <CardHeader data={data} />
           <CardThumbnail data={data} />
           <CardBody data={data} />
-
-          <PortfolioItemFooter
-            sourceCodeUrl={sourceCodeUrl}
-            demoUrl={demoUrl}
-          />
+          <CardFooter data={data} />
         </div>
       </div>
     );
   }
 
   cardStyle = {
-    margin: '20px',
-    background: 'transparent'
+    margin: '20px'
   };
 }
 

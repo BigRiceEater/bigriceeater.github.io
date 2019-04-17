@@ -10,9 +10,9 @@ const FooterItem = (props) => {
   );
 };
 
-class PortfolioItemFooter extends Component {
+class CardFooter extends Component {
   render() {
-    const { sourceCodeUrl, demoUrl } = this.props;
+    const { sourceCodeUrl, demoUrl } = this.props.data;
     return (
       <footer className='card-footer'>
         <FooterItem url={sourceCodeUrl}>
@@ -28,4 +28,4 @@ class PortfolioItemFooter extends Component {
   }
 }
 
-export default PortfolioItemFooter;
+export default CardFooter;
