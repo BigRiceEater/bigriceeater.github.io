@@ -1,28 +1,17 @@
 import React, { Component } from 'react';
-
 import PortfolioItemFooter from './portfolio-item-footer';
 import CardHeader from './card-header';
+import CardThumbnail from './card-thumbnail';
 
 class CardItem extends Component {
   render() {
     const { thumbnail, description, demoUrl, sourceCodeUrl } = this.props.data;
+    const { data } = this.props;
     return (
       <div className='column is-half'>
         <div className='card' style={this.cardStyle}>
-          <CardHeader data={this.props.data} />
-          <div className='card-image'>
-            <figure className='image'>
-              <img
-                src={thumbnail}
-                alt='card image'
-                style={{
-                  objectFit: 'cover',
-                  marginTop: '5px',
-                  minHeight: '180px'
-                }}
-              />
-            </figure>
-          </div>
+          <CardHeader data={data} />
+          <CardThumbnail data={data} />
 
           <div
             className='card-content'
